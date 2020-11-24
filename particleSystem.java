@@ -8,7 +8,7 @@ void setup() {
 void draw() {
   background(220);
   
-  particles.add(new SquareParticle(new PVector(width/2, height/4)));
+  particles.add(new SquareParticle(new PVector(mouseX, mouseY)));
   
   for(int i = particles.size()-1; i>=0; i--) {
     Particle p = particles.get(i);
